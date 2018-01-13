@@ -1,6 +1,8 @@
 function gimmeBack(adj) {return adj}
 function addPlease(number) {return number+2}
-
+function doublePlease(name) {return name  *2}
+function elder(what) {return what + ' Senior'}
+function timesPlease(gid, go) {return gid * go }
 it('returns the given argument', () => {
   expect(gimmeBack('this')).toBe('this');
   expect(gimmeBack(5)).toBe(5);
@@ -31,7 +33,8 @@ it('multiplies two parameters', () => {
   expect(timesPlease(2, 4)).toBe(8);
   expect(timesPlease(5, 6)).toBe(30);
 });
-
+function fullName(base, bart) {return base + ' ' + bart}
+function lastFirst(bee, bear) {return bear + ', ' + bee}
 it('concatenates two strings', () => {
   expect(fullName('Bob', 'Loblaw')).toBe('Bob Loblaw');
   expect(fullName('Jane', 'Jamison')).toBe('Jane Jamison');
