@@ -21,6 +21,7 @@ it('returns a function that accepts an argument', () => {
   expect(result(2)).toBe(4);
   expect(result(5)).toBe(10);
 });
+
 function argFuncFunc(neet) {
   return function() {return neet}
 }
