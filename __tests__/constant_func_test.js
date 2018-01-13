@@ -11,5 +11,5 @@ it('returns an object', () => {
 });
 
 it('returns an array', () => {
-  expect(gimmeObj()).toBe([1, 'array']);
+  expect(gimmeArr()).toBe([1, 'array']);
 });
