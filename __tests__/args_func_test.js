@@ -36,3 +36,8 @@ it('concatenates two strings', () => {
   expect(fullName('Bob', 'Loblaw')).toBe('Bob Loblaw');
   expect(fullName('Jane', 'Jamison')).toBe('Jane Jamison');
 });
+
+it('does last name first', () => {
+  expect(lastFirst('Bob', 'Loblaw')).toBe('Loblaw, Bob');
+  expect(lastFirst('Jane', 'Jamison')).toBe('Jamison, Jane');
+});
