@@ -1,1 +1,3 @@
-expect(myFunc()).toBeUndefined();
+it('returns undefined', () => {
+  expect(myFunc()).toBeUndefined();
+});
