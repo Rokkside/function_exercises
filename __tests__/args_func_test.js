@@ -31,3 +31,8 @@ it('multiplies two parameters', () => {
   expect(timesPlease(2, 4)).toBe(8);
   expect(timesPlease(5, 6)).toBe(30);
 });
+
+it('concatenates two strings', () => {
+  expect(fullName('Bob', 'Loblaw')).toBe('Bob Loblaw');
+  expect(fullName('Jane', 'Jamison')).toBe('Jane Jamison');
+});
