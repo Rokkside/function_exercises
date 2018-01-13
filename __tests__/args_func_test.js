@@ -1,3 +1,6 @@
+function gimmeBack(adj) {return adj}
+function addPlease(number) {return number+2}
+
 it('returns the given argument', () => {
   expect(gimmeBack('this')).toBe('this');
   expect(gimmeBack(5)).toBe(5);
@@ -6,7 +9,7 @@ it('returns the given argument', () => {
   expect(gimmeBack(obj)).toBe(obj);
 
   const arr = [1, 'array'];
-  expect(gimmeBack(arr).toBe(arr);
+  expect(gimmeBack(arr)).toBe(arr);
 });
 
 it('adds two', () => {
