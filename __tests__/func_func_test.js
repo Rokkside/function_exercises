@@ -27,3 +27,25 @@ it('accepts an argument and returns another function', () => {
   expect(result).toBeInstanceOf(Function);
   expect(result()).toBe(myArg);
 });
+
+it('accepts an arg and returns a function that accepts an arg', () => {
+  const result = argFuncFunc(5);
+
+  expect(result).toBeInstanceOf(Function);
+  expect(result(2)).toBe(10);
+  expect(result(5)).toBe(25);
+});
+
+it('accepts an arg and returns a function that prepends a name', () => {
+  const honor = prepend('Sir');
+
+  expect(result).toBeInstanceOf(Function);
+  expect(honor('Bill')).toBe('Sir Bill');
+  expect(honor('Sally')).toBe('Sir Sally');
+
+  const dishonor = prepend('Booger');
+
+  expect(result).toBeInstanceOf(Function);
+  expect(dishonor('Bill')).toBe('Booger Bill');
+  expect(dishonor('Sally')).toBe('Booger Sally');
+});
