@@ -1,7 +1,12 @@
+function returnFive() {
+  return 5
+}
 it('returns 5', () => {
   expect(returnFive()).toBe(5);
 });
-
+function funcFunc() {
+  return returnFive
+}
 it('returns a function', () => {
   const result = funcFunc();
 
