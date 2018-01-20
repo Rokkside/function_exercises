@@ -1,8 +1,3 @@
-function gimmeOne() {return 1}
-function gimmeBlah() {return 'blah'}
-function gimmeObj() {return {gimme: 'now'}}
-function gimmeArr() {return [1, 'array']}
-
 it('returns 1', () => {
   expect(gimmeOne()).toBe(1);
 });
